@@ -392,7 +392,7 @@ footer {
 }
 
 .checkbox {
-    margin-top: 23px;
+    margin-top: 13px;
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -401,12 +401,22 @@ footer {
 
 .checkbox-text {
     display: flex;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 15px;
-    max-width: 400px;
-    color: #FFFFFF;
+    align-items: center;
+    align-content: center;
+}
+
+.checkbox-text > a {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: underline;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  max-width: 400px;
+  color: #FFFFFF;
+}
+
+.checkbox-text > a:hover {
+  color: #6c6c6e;
 }
 
 .btn-footer {
@@ -526,4 +536,24 @@ footer {
         align-content: center;
         align-items: center;
     }
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #961914;; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
 }
