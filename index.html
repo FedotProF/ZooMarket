@@ -17,6 +17,7 @@
 </head>
 
 <body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Наверх</button>
   <header>
     <div class="container">
       <nav class="header__nav">
@@ -222,8 +223,9 @@
           </div>
           <div class="checkbox">
             <div class="checkbox-text">
-              <input type="checkbox" class="checkbox" required>Даю согласие на обработку
-              персональных данных
+              <input type="checkbox" onchange="toggleSubmitButton()" class="checkbox" required><a
+                href="file/Политика обработки персональных данных.pdf" download>Даю согласие на обработку
+                персональных данных. </a>
             </div>
             <div>
               <button class="btn-footer" type="submit">Отправить</button>
@@ -233,7 +235,8 @@
       </div>
     </div>
   </footer>
-  <script src="js/main.js"></script>
+  <script src="js/btnIUp.js"></script>
+  <script src="js/form.js"></script>
 </body>
 
 </html>
