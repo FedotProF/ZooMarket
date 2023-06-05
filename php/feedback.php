@@ -3,7 +3,7 @@
     $email = $_POST['email'];
     $message = $_POST['questText'];
 
-    $to = "Email";
+    $to = "admin@zoomarket-rostov.ru";
 
     $subject = "=?utf-8?B?".base64_encode("Вопрос по корму")."?=";
     $headers ="From: $email\r\nReply-to: $email\r\nContent-type: text/html; charset=utf-8\r\n";
